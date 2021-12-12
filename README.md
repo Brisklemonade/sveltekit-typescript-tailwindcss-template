@@ -7,7 +7,7 @@ This is a starter template to jumpstart your project with Typescript and the lat
 Run this command in your terminal:
 
 ```bash
-	npx create-tailwindkit-ts@0.2.5 <app-name>
+npx create-tailwindkit-ts@latest your-app-name-here
 ```
 
 ## Usage

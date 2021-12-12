@@ -25,6 +25,6 @@ console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
-console.log('Congratulations! You are ready. Follow the following commands to start');
-console.log(`cd ${repoName}`);
-console.log(`npm run dev`);
+console.log('\nCongratulations your project is ready! Follow the steps below to start');
+console.log(`1. cd ${repoName}`);
+console.log(`2. npm run dev`);

@@ -1,6 +1,6 @@
 {
 	"name": "create-tailwindkit-ts",
-	"version": "0.2.7",
+	"version": "0.3.0",
 	"description": "A Sveltekit starter project with Typescript and Latest version of Tailwind pre-configured",
 	"bin": "./bin/cli.cjs",
 	"scripts": {
