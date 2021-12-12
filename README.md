@@ -1,25 +1,13 @@
 # Sveltekit Tailwind & Typescript Template
 
-This is a starter template to jumpstart your project with typescript and the latest version of [tailwindcss](https://tailwindcss.com/), with minimal to no configuration needed.
+This is a starter template to jumpstart your project with Typescript and the latest version of [Tailwindcss](https://tailwindcss.com/), with minimal to no configuration needed.
 
 ## Installation
 
-You will need to git clone the repo:
+Run this command in your terminal:
 
 ```bash
-git clone https://github.com/Brisklemonade/sveltekit-typescript-tailwindcss-template.git
-```
-
-then cd into the repo:
-
-```bash
-cd sveltekit-typescript-tailwindcss-template
-```
-
-and finally install the dependencies through npm:
-
-```bash
-npm i
+	npx create-tailwindkit-ts@0.2.5 <app-name>
 ```
 
 ## Usage
