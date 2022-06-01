@@ -1,6 +1,18 @@
 <script lang="ts">
 	let subtitle: string = 'Helpful Links';
+	import {user} from "$lib/sessionStore"
+    import {supabase} from "$lib/supabaseClient"
+    import Auth from "$lib/Auth.svelte"
+    import Profile from "$lib/Profile.svelte"
+	import Signup from "$lib/Signup.svelte"
+
+    user.set(supabase.auth.user())
+
+    supabase.auth.onAuthStateChange((_, session) => {
+        user.set(session.user)
+    })
 </script>
+
 
 <div class="grid place-content-center m-20 p-20 border-2 border-blue-400 rounded-lg shadow-xl">
 	<h1 class="text-4xl mb-4">
@@ -10,6 +22,14 @@
 		&
 		<span class="text-[#06B6D4]">Tailwind CSS</span>
 	</h1>
+	<div class="container" style="padding: 50px 0 100px 0;">
+    {#if $user}
+        <Profile />
+    {:else}
+		<Signup />
+		<Auth />
+    {/if}
+</div>
 	<h2 class="text-center text-3xl uppercase">{subtitle}</h2>
 	<hr />
 	<div class="mt-4 w-full">
